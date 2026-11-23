@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Willow Verdant — Neon Runner</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>▮ willow verdant — neon runner</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="controls">Controls</h2><div class="btncol">
+<button id="start" class="primary" data-i="start">▶ Start</button>
+<button id="reset" data-i="reset">↻ Reset</button></div></section>
+<section><h2 data-i="setup">Setup</h2>
+<label><span data-i="grid">Grid size</span><select id="grid"><option>16</option><option>20</option><option>24</option><option>28</option></select></label>
+<label><span data-i="speed">Speed</span><select id="speed"><option>6</option><option>8</option><option>10</option><option>12</option></select></label>
+<label class="check"><input type="checkbox" id="wrap" > <span data-i="wrap">Wrap-around walls</span></label>
+<label class="check"><input type="checkbox" id="obs" checked> <span data-i="obs">Obstacles</span></label></section>
+<section class="stats"><span data-i="score">Score</span> <b id="score">0</b> · <span data-i="best">Best</span> <b id="best">0</b></section>
+</aside><div class="stage"><canvas id="cv"></canvas><div class="overlay" id="overlay"><p data-i="press">Press start or use arrow keys / WASD / swipe</p></div></div></main>
+<script src="app.js"></script></body></html>
